@@ -9,6 +9,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
+import org.apache.hadoop.util.ToolRunner;
 
 
 import java.io.IOException;
@@ -18,8 +19,9 @@ import java.io.IOException;
  */
 public class Counter extends Configured implements Tool {
 
-    public static void main(String... args) {
-
+    public static void main(String... args) throws IOException, InterruptedException, ClassNotFoundException{
+        int exitCode = new Counter().run(args);
+        System.exit(exitCode);
     }
 
     public int run(String... args) throws IOException, InterruptedException, ClassNotFoundException {
