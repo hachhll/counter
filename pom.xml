@@ -52,7 +52,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>ru.megafon.lc_app.LC_APP</mainClass>
+                            <mainClass>ru.technodiasoft.exaple.counter.Counter</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
